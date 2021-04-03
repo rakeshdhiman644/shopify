@@ -1,0 +1,82 @@
+{%- assign blog = blogs[section.settings.blogSelect] -%}
+
+<div class="journal-heading">
+  <h2>{{ section.settings.blog-title }}</h2>
+  {% if section.settings.show_all_blogs %}
+  <a href="{{ blog.url }}">{{ 'blogs.article.view_all' | t }} <i class="fas fa-arrow-right"></i></a>
+  {% endif %}
+</div>
+
+<div class="simple-wedding-section">
+  <div class="row">
+    
+    
+    <div class="col-md-1"></div>
+    {%- for article in blog.articles limit: section.settings.post_limit -%}
+    <div class="col-md-5 col-lg-5 col-12">
+      <div class="simple-wedding-img">
+        {%- if article.image -%}
+            <img src="{{ article.image | img_url: 'large' }}" class="wedding-img">
+          {%- endif -%}
+        <a href="{{ article.url }}"><h2>{{ article.title }}</h2></a>
+        {% if section.settings.blog_show_date %}
+        <p>{{ article.published_at | time_tag: format: 'date' }}</p>
+        {% endif %}
+        {% if article.excerpt.size > 0 %}
+        <span>{{ article.excerpt }}</span>
+        {% else %}
+        <span>{{ article.content | strip_html | truncate: 150 }}</span>
+        {% endif %}
+      </div>
+      
+    </div>
+    {% endfor %}
+    <div class="col-md-1"></div>
+    
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Blogs",
+    "settings": [
+    {
+      "type": "text",
+      "id": "blog-title",
+      "label": "Blog Heading Title"
+    },
+    {
+        "type": "blog",
+        "id": "blogSelect",
+        "label": "Select Blog"
+    },
+    {
+        "type":      "range",
+        "id":        "post_limit",
+        "min":       2,
+        "max":        4,
+        "step":      1,
+        "label":     "Posts Limit",
+      "default":    2
+    },
+    {
+        "type": "checkbox",
+        "id": "blog_show_date",
+        "default": true,
+        "label": "Show Blog Date"
+    },
+    {
+        "type": "checkbox",
+        "id": "show_all_blogs",
+        "default": true,
+        "label": "Show All Blogs"
+    }
+  ],
+  "presets": [
+      {
+        "category": "Blogs Section",
+        "name": "Blogs"
+      }
+    ]
+  }
+{% endschema %}

@@ -1,0 +1,60 @@
+<div class="featured-product-section">
+  <h2>{{ section.settings.title }}</h2>
+  <div class="row">
+    {% for block in section.blocks %}
+    {% assign product_item = all_products[block.settings.feature_product] %}
+       
+    <div class="col-md-3 col-lg-3 col-12">
+      <div class="featured-product-box">
+        <img src="{{ product_item | img_url:'large' }}" class="featured-img">
+        <p><a href="{{ product_item.url }}">{{ product_item.title }}</a><span> {{ product_item.price | money_without_trailing_zeros }} </span></p>
+        <form method="post" action="/cart/add" class="add-to-cart">
+         <input type="hidden" name="id" value="{{ product_item.first_available_variant.id }}" />
+         <button type="submit" name="add" class="buy-now-btn">
+         {{ 'products.product.add_to_cart' | t }} <i class="fas fa-arrow-right"></i>
+         </button>
+      </form>
+<!--         <a href="{{ product_item.url }}">add cart <i class="fas fa-arrow-right"></i></a> -->
+      </div>
+    </div>
+  {% endfor %}
+ </div>
+</div>
+{% schema %}
+  {
+    "name": "Feature Product",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    }
+  ],
+    "blocks": [
+    {
+      "type": "product",
+      "name": "Select Product",
+      "settings":[
+            {
+              "type": "product",
+              "id": "feature_product",
+              "label": "Product"
+            }
+          ]
+    } 
+  ],
+  "max_blocks": 4,
+      "presets": [
+      {
+        "category": "Feature Product Section",
+        "name": "Feature Product"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

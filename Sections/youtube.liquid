@@ -1,0 +1,29 @@
+<div class="video-section">
+       {{ section.settings.html_area }}
+</div>
+{% schema %}
+   {
+    "name": "Youtube",
+    "settings": [
+      {
+       "type": "html",
+       "id": "html_area",
+       "label": "Custom HTML",
+       "default": "<div><p>Some HTML content</p></div>"
+      }
+    ],
+    "presets": [
+      {
+        "category": "Youtube html",
+        "name": "Youtube video"
+      }
+    ]
+
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

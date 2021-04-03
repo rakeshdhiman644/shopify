@@ -1,0 +1,47 @@
+<div class="seven-wonders-section">
+                        <a href="#" class="seven-wonders-heading"><h1>{{ section.settings.text-box }}</h1></a>
+                        <p>{{ section.settings.text }}</p>
+                        <a href="{{ collection.url }}" class="seven-wonders-btn">{{ section.settings.linktext }} <i class="fas fa-arrow-right"></i></a>
+                    </div>
+{% schema %}
+  {
+    "name": "Seven Wonder",
+    "settings": [
+      {
+        "id": "text-box",
+        "type": "text",
+        "label": "Heading",
+        "default": "Title"
+      },
+      {
+        "id": "text",
+        "type": "richtext",
+        "label": "Add custom text below",
+        "default": "<p>Add your text here</p>"
+      },
+     {
+      "id": "link",
+      "type": "collection",
+      "label": "Button link"
+    },
+    {
+      "id": "linktext",
+      "type": "text",
+      "label": "Button text",
+      "default": "Click here"
+    }
+    ],
+    "presets": [
+      {
+        "category": "Seven Wonder Content",
+        "name": "Seven Wonder"
+      }
+    ]
+
+  }
+{% endschema %}
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

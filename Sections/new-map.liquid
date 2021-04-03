@@ -1,0 +1,51 @@
+{%- assign display_map = false -%}
+
+{%- if section.settings.map_api != blank and section.settings.map_address -%}
+  {%- assign display_map = true -%}
+{%- endif -%}
+
+<div id="MapSection--{{ section.id }}"
+     class="map-section
+           {% if display_map %}map-section--display-map{% endif %}"
+     data-section-id="{{ section.id }}"
+     data-section-type="map">
+  <div class="page-width map-section__wrapper">
+    <div class="map-section__background-wrapper">
+      {% if display_map %}
+        <div class="map-section__container"
+             id="Map-{{ section.id }}"
+             data-map
+             data-address-setting="{{ section.settings.map_address | escape }}"
+             data-api-key="{{ section.settings.map_api }}">
+        </div>
+        <div class="map-section__overlay" data-map-overlay></div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "New Map",
+    "settings": [
+  {
+      "type": "textarea",
+      "id": "map_api",
+      "default": "AIzaSyCsYXS5KEfQfuLJQnftXa-qiaSdrFxVTJY",
+      "label": "Google Maps Api",
+    "info" : " [Generate Google Maps Api](https://developers.google.com/maps/documentation/javascript/get-api-key)"
+  },
+  {
+      "type": "text",
+      "id": "map_address",
+    "default": "301 Front St W, Toronto",
+      "label": "Map Address"
+  }
+  ],
+  "presets": [
+      {
+        "category": "Maps API Section",
+        "name": "MAPS"
+      }
+    ]
+  }
+{% endschema %}

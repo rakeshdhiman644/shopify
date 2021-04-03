@@ -1,0 +1,37 @@
+<div class="about-section">
+                 			<h2>{{ page.title }}</h2>
+                 			<div class="row">
+                 				 <div class="col-md-2 col-lg-2"></div>
+                 				 <div class="col-md-8 col-lg-8 col-12">
+                 				 	 <div class="about-images">
+                 				 	 	 <img src="{{ section.settings.aboutImg | img_url:'large' }}" class="about-img">
+                                       {{ page.content }}
+                 				 	 </div>
+                 				 </div>
+                 				 <div class="col-md-2 col-lg-2"></div>
+                 			</div>
+                 		</div>
+{% schema %}
+  {
+    "name": "About US",
+    "settings": [
+	{
+      "type": "image_picker",
+      "id": "aboutImg",
+      "label": "ABOUT US image"
+    }
+],
+"presets": [
+      {
+        "category": "About US Section",
+        "name": "About"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

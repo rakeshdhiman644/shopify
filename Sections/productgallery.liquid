@@ -1,0 +1,53 @@
+<div class="gallery-section">
+                    <div class="row">
+                          {% for block in section.blocks %}
+                          {% assign product_item = all_products[block.settings.feature_product] %}
+                      <div class="col-md-6 col-lg-6 col-12">
+                        <div class="gallery-left-side">
+                                  <a href="{{ product_item.url }}"><img src="{{ product_item | img_url:'large' }}" class="gallery-img"></a>
+                           <div class="gallery-img-btn">
+                                       <h5>{{ product_item.title }} - <span>{{ product_item.price | money_without_trailing_zeros }}</span></h5>
+                          </div>
+                        </div>
+                      </div>
+                          {% endfor %}
+                    </div>
+                  </div>
+{% schema %}
+  {
+    "name": "Product Gallery",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    }
+  ],
+    "blocks": [
+    {
+      "type": "product",
+      "name": "Feature Image",
+      "settings":[
+            {
+              "type": "product",
+              "id": "feature_product",
+              "label": "Product"
+            }
+          ]
+    } 
+  ],
+  "max_blocks": 4,
+      "presets": [
+      {
+        "category": "Product Gallery Section",
+        "name": "Product Gallery"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,984 @@
+/* top navigation */
+.static-top li a {
+    color: #606060 !important;
+    font-weight: 500;
+}
+.static-top {
+    margin-top: -19px;
+}
+/* end of top navigation */
+/* search form css */
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+}
+
+.overlay-content {
+  position: relative;
+  top: 46%;
+  width: 80%;
+  text-align: center;
+  margin-top: 30px;
+  margin: auto;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  cursor: pointer;
+  color: white;
+}
+
+.overlay .closebtn:hover {
+  color: #ccc;
+}
+
+.overlay input[type=text] {
+  padding: 15px;
+  font-size: 17px;
+  border: none;
+  float: left;
+  width: 80%;
+  background: white;
+}
+
+.overlay input[type=text]:hover {
+  background: #f1f1f1;
+}
+
+.overlay button {
+  float: left;
+  width: 20%;
+  padding: 11px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.overlay button:hover {
+  background: #bbb;
+}
+/* end of search form css */
+/* custom css */
+.cart__submit.btn.btn--small-wide {
+    background: #b55f3b;
+    color: #fff;
+    border: 0;
+    margin-left: 2px;
+    padding-top: 10.5px;
+    padding-bottom: 11px;
+    transition: 0.35s;
+}
+.cart__submit.btn.btn--small-wide:hover{
+    background: #b55f3b;
+    color: #fff;
+}
+.btn.product-form__cart-submit.btn--secondary-accent:hover {
+    background: #b55f3b;
+    color: #fff;
+}
+.cart {
+    color: #333232;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+.site-footer__item-inner.site-footer__item-inner--newsletter {
+    max-width: unset !important;
+}
+.site-footer__item-inner.site-footer__item-inner--newsletter h2{
+  text-transform: unset !important;
+}
+.slideshow__btn-wrapper.slideshow__btn-wrapper--push a {
+    text-transform: unset !important;
+}
+.slideshow__btn-wrapper.slideshow__btn-wrapper--push a:hover {
+    background-color: #b55f3b !important;
+}
+.index-section{
+  padding-bottom: 0px !important;
+  padding-top: 0px !important;
+}
+#PageContainer {
+    padding-top: 10px;
+}
+#mw-instagram-feed--1593163203824 h2{
+    font-size: 2rem !important;
+    text-transform: unset !important;
+    letter-spacing: unset !important;
+}
+.buy-now-btn {
+    background: none;
+    border: none;
+    color: #b55f3b;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.featured-product-section h2{
+  	font-size: 2rem !important;
+    text-transform: unset !important;
+    letter-spacing: unset !important;
+}
+.journal-heading h2{
+    font-size: 2rem !important;
+    text-transform: unset !important;
+    letter-spacing: unset !important;
+}
+.simple-wedding-img h2 {
+    font-size: 2rem !important;
+    text-transform: unset !important;
+    letter-spacing: unset !important;
+}
+.contact-images-box h2 {
+    font-size: 2.8rem !important;
+    text-transform: unset !important;
+    letter-spacing: unset !important;
+}
+.about-section h2 {
+    font-size: 2.8rem !important;
+    text-transform: unset !important;
+    letter-spacing: unset !important;
+}
+.pagination {
+    margin: 0 auto;
+}
+.journal-section h2 {
+   text-transform: unset !important;
+   letter-spacing: unset !important;
+}
+.page {
+    padding: 0 7px 0 7px;
+}
+  .page.current {
+    background: #b55f3b;
+    color: #fff;
+    border-radius: 50%;
+} 
+.product_section{
+    width: 90%;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+.page-width{
+    padding-top: 18px !important;
+}
+.btn.product-form__cart-submit.btn--secondary-accent {
+    background: #b55f3b;
+    color: #fff;
+    border: 0;
+    margin-left: 2px;
+    padding-top: 10.5px;
+    padding-bottom: 11px;
+    transition: 0.35s;
+}
+.product-single__description {
+    margin-top: 0px !important;
+}
+.collection-section {
+    text-align: center;
+    padding-bottom: 10px;
+}
+.collection-section h2 {
+    font-size: 2.8rem;
+    text-transform: unset;
+    letter-spacing: unset;
+}
+.site-nav__label {
+    border-bottom: none !important;
+}
+/* end of custom css */
+*{
+  font-family: 'Montserrat', sans-serif;
+}
+p {
+  font-family: 'Montserrat', sans-serif !important;
+}
+h1,h2,h3,h4,h6{
+  font-family: 'Playfair Display', serif !important;
+}
+/*a{
+	font-family: 'Varela Round', sans-serif;
+}*/
+.img{
+  width: 100%;
+}
+body,html{
+  overflow-x: hidden;
+}
+.background-color {
+    background: #efe7e4;
+}
+.main-sidebar {
+    overflow-x: hidden;
+    overflow-y: auto;
+    transition: left 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94),width 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 2000;
+	width: 300px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	background-color: #fff;
+}
+.main-sidebar-header {
+    padding: 2.66667rem 2.66667rem 4rem;
+    background-color: #fff;
+}
+.main-sidebar-logo .logo {
+    max-width: 100%;
+}
+.main-sidebar-tools {
+    margin-top: 30px;
+}
+.main-sidebar-tools a {
+    color: #b55f3b;
+    text-transform: uppercase;
+}
+.main-sidebar-tools a:hover {
+    color: #b55f3b;
+    text-decoration: none;
+}
+.navigation-menu {
+    padding-left: 0;
+    margin: 0;
+}
+.main-navigation-menu {
+    margin-left: -15px;
+}
+.navigation-menu li a {
+    font-size: 20px;
+}
+.navigation-menu li a {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #606060;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.navigation-menu li {
+    list-style-type: none;
+}
+.main-navigation-menu {
+    margin-left: -15px;
+    margin-top: 50px;
+}
+.navigation-menu-2 li {
+    list-style-type: none;
+}
+/*.navigation-menu-2 {
+    margin-left: -34px;
+}*/
+.navigation-menu-2 li a {
+    color: #606060;
+}
+.main-navigation-footer {
+    margin-bottom: 25px;
+}
+.main-navigation-social-links .fab {
+    margin-right: 17px;
+    color: #606060;
+}
+/* dropdwon menu csss starts*/
+.dropbtn {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #606060;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-left: 7px;
+    border: none;
+    background: #fff
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: none;
+}
+/* dropdwon menu csss ends*/
+.main-navigation-footer__payments-cross-border {
+    margin-top: 30px;
+}
+#dropdownMenuButton {
+    background: #fff;
+    border: 1px solid #606060;
+    border-radius: 0px;
+    color: #606060;
+}
+/*.footer-copyright {
+    margin-top: 35px;
+}*/
+.instagram-img {
+    width: 100%;
+    border-radius: 15px 0;
+    transition: 1s;
+}
+.instagram-img:hover {
+    box-shadow: 2px 5px 30px 2px #878080;
+}
+.instagram-images {
+    margin-bottom: 30px;
+}.featured-img{
+    width: 100%;
+}
+.instagram-gallery-section {
+    background: #eed4cb;
+    text-align: center;
+    padding-top: 7%;padding-bottom: 4%;
+}
+.instagram-gallery-section h2 {
+    color: #606060;
+    margin-bottom: 7%;
+}
+.footer-copyright p {
+    font-size: 11px;
+    color: #606060;
+    font-weight: 500;
+}
+.footer-copyright span {
+    font-size: 10px;
+    color: #606060;
+}
+.disktop-menu{
+	display: block;
+}
+/*mobile toggle menu css start*/
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.sidenav a {
+    padding: 8px 8px 6px 11px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #000;
+    display: block;
+    transition: 0.3s;
+}
+.sidenav a:hover {
+  color: #000;
+  text-decoration: none;
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+/*.mobile-menu {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    color: #000;
+}*/
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+/*mobile toggle menu css ebds*/
+.main-navigation-menu-2 {
+    margin-top: 10px;
+}
+.mobile-menu{
+	display: none;
+}
+.banner-text h1 {
+    margin-top: -20px;
+    font-size: 46px;
+}
+.banner-text a{
+	background: #b55f3b;
+	color: #fff;
+	padding: 10px 20px;
+}
+.banner-text a:hover{
+	text-decoration: none;color: #fff;
+}
+.banner-text {
+    padding-bottom: 100px !important;
+}
+.carousel-control-next-icon{
+	display: none !important;
+}
+.carousel-control-prev {
+    display: none !important;
+}
+.right-side-sider {
+    margin-left: -24px;
+    margin-top: 10px;
+    margin-right: 2px;
+    margin-bottom: 12px;
+}
+.seven-wonders-section {
+    background: #eccfc6;
+    margin-top: 10px;
+    text-align: center;
+    padding-bottom: 80px;padding-top: 80px;
+}
+.seven-wonders-heading  {
+    padding-top: 80px;
+    color: #666;
+}
+.seven-wonders-section h1 {
+    font-size: 2.8rem;
+    color: #606060;
+}
+.seven-wonders-heading:hover {
+    text-decoration: none;
+    color: #606060;
+}
+.seven-wonders-section p {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.seven-wonders-btn {
+    color: #b55f3b;
+    text-transform: uppercase;
+}
+.seven-wonders-btn:hover {
+   color: #606060;
+   text-decoration: none;
+}
+.seven-wonders-btn:hover {
+    color: #666;
+    text-decoration: none;
+}
+.gallery-img {
+    width: 100%;
+}
+.seven-wonders-section p {
+    margin-left: 10%;
+    margin-right: 10%;
+    color: #606060;
+    font-weight: 500;
+    font-size: 14px;
+}
+.gallery-img-btn {
+    margin-left: 12px;
+    position: absolute;
+    right: auto;
+    bottom: 10px;
+    left: 10px;
+    max-width: calc(100% - 20px);
+    padding: 10px 20px;
+    background-color: rgba(190,178,178,0.9);
+}
+.gallery-img-btn h5 {
+    color: #fff;
+    font-size: 14px;
+    margin: 3px 0px 9px 0px;
+/*     margin-top: 3px; */
+}
+.gallery-left-side {
+    margin-left: 0px;
+    margin-top: 22px;
+}
+
+.gallery-section {
+    margin-left: 8px;
+}
+.client-section{
+	text-align: center;
+	padding-bottom: 10%;
+}
+.client-text h4{
+	margin-top: 10%;
+	margin-left: 10%;
+	margin-right: 10%;
+	font-size: 23px;
+	color: #606060;
+	letter-spacing: 1px;
+	line-height: 30px;
+}
+.journal-heading {
+    text-align: center;
+    margin-top: 15%;
+}
+.journal-heading a {
+    letter-spacing: 0.04667rem;
+    text-transform: uppercase;
+    padding-top: 20px;
+    color: #b55f3b;
+}
+.journal-heading a:hover{
+    color: #606060;
+    text-decoration: none;
+}
+.journal-heading h2 {
+    margin-bottom: 33px;
+    color: #606060;
+}
+.wedding-img{
+	width: 100%;
+}
+.simple-wedding-img {
+    text-align: center;
+    margin-top: 15%;margin-bottom: 15%;
+}
+.simple-wedding-img h2 {
+    color: #606060;
+    margin-top: 16px;
+    font-size: 1.86667rem;
+}
+.simple-wedding-img p {
+    color: #606060;
+    font-weight: 500;
+}
+.simple-wedding-img a:hover{
+	text-decoration: none; color: #606060;
+}
+.simple-wedding-img span {
+    color: #606060;
+    font-size: 12px;
+    font-weight: 500;
+}
+.subscribe-section {
+    text-align: center;
+    background: #eed4cb;
+    padding-top: 13%;
+    padding-bottom: 5%;
+}
+.subscribe-section h2 {
+    color: #606060;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    font-size: 2rem !important;
+}
+.subscribe-section p {
+    color: #606060;
+    font-weight: 500;
+}
+.client-section p {
+    color: #606060;
+    font-weight: 500;
+    margin-top: 30px;
+}
+.subscribe-inpt {
+    background: #eed4cb !important;
+    border: 1px solid #000 !important;
+    border-radius: 0px !important;
+    font-size: 12px !important;
+    height: 44px !important;
+    padding-left: 26px !important;
+}
+.subscribe-grup-text {
+    margin-left: 10px !important;
+    background: #b55f3b !important;
+    color: #fff !important;
+    text-transform: uppercase !important;
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    padding: 13px 20px !important;
+}
+.featured-product-section {
+    margin-top: 7%;
+    
+}
+.featured-product-section h2 {
+    color: #606060;
+    margin-bottom: 7%;text-align: center;
+}
+.featured-product-box p {
+    font-weight: 500;
+    color: #606060;
+    margin-top: 10px;
+}
+.featured-product-box span {
+    margin-left: 15px;
+}
+.featured-product-box a {
+    color: #b55f3b;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.featured-product-box a:hover{
+    text-decoration: none;color: #606060;
+}
+.featured-product-box {
+    border: 1px solid #eed4cb;
+    padding: 2px;
+}
+.featured-product-box {
+    border: 1px solid #eed4cb;
+    padding: 2px;
+    background: #fff;
+    box-shadow: 2px 5px 19px 2px #878080;
+    transition: 2s;text-align: center;
+}
+.featured-product-box:hover {
+    box-shadow: none;
+}
+/*   collection page css statrs   */
+.colectons-bg{
+	background: #f2dad0;
+	margin-top: 10px;
+}
+.collection-heading {
+    text-align: center;
+    padding-top: 30%;
+    padding-bottom: 20%;
+}
+.colltion-img {
+    width: 100%;
+}
+.collection-heading p {
+    color: #606060;
+    font-weight: 500;
+    font-size: 13px;
+}
+.collection-heading h2 {
+    font-size: 2.8rem;
+    color: #606060;
+}
+.colectons-top-bg {
+    background: #eccec4;
+}
+.colectons-bottom-bg {
+    background: #faeae4;
+    margin-top: 10px;
+}
+/*   collection page css ends   */
+/*   lookbook page css start   */
+.lookbook-sevtion {
+    background: #eed4cb;
+    text-align: center;
+    margin-left: -12px;
+    padding-top: 14%;
+    padding-bottom: 14%;
+}
+.lookbook-sevtion h2 {
+    font-size: 2.8rem;
+    color: #606060;
+}
+.lookbook-sevtion p {
+    margin: 0 18%;
+    font-weight: 500;
+    color: #606060;
+    font-size: 14px;
+}
+.lookbook-img {
+    width: 100%;
+}
+.lookbook-images {
+    margin-top: 60%;
+}
+.lookbook-images-1 {
+    margin-top: 20%;
+}
+.lookbook-img-2{
+	width: 100%;
+}
+.lookbook-img-3 {
+    width: 100%;
+}
+.lookbook-images-2 {
+    margin-top: 10%;
+}
+.lookbook-images-3 {
+    margin-top: 47%;
+}
+.lookbook-text {
+    margin-top: 40%;
+}
+.lookbook-text h4 {
+    color: #606060;
+}
+.lookbook-text p {
+    font-size: 10px;
+    font-weight: 500;
+    color: #606060;
+}
+.lookbook-images-section-3 {
+    margin-top: 10%;
+}
+.lookbook-images-section-2 {
+    margin-top: 33%;
+}
+.lookbook-images-section-1 {
+    margin-bottom: 8%;
+}
+.lookbook-text-2 {
+    margin: 0 10%;
+}
+.lookbook-text-2 h4 {
+    color: #606060;
+}
+.lookbook-text-2 p {
+    font-size: 12px;
+    font-weight: 500;
+    color: #606060;
+}
+/*   lookbook page css ends   */
+/*   journal page css ends   */
+.journal-section {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+}
+.journal-section h2 {
+    color: #606060;
+    font-size: 2.8rem;
+    margin-bottom: 60px;
+    margin-top: 60px;
+}
+.journal-img {
+    width: 100%;
+}
+.journal-gallery-images h3 {
+    color: #606060;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+.journal-gallery-images a:hover{
+    color: #606060;
+    text-decoration: none;
+}
+.journal-gallery-images p {
+    color: #606060;
+    font-weight: 500;
+}
+.journal-gallery-images span {
+    font-size: 12px;
+    color: #606060;
+    font-weight: 500;
+    line-height: 1.9;
+}
+.journal-gallery {
+    margin-top: -40%;
+}
+.journal-gallery-images {
+    margin-bottom: 30px;
+}
+/*   journal page css ends   */
+
+/*   about page css starts   */
+.about-section {
+    text-align: center;
+}
+.about-section h2 {
+    color: #606060;
+    font-size: 2.8rem;
+    margin-bottom: 60px;
+    margin-top: 60px;
+}
+.about-images p {
+    font-size: 14px;
+    color: #606060;
+    font-weight: 500;
+    line-height: 1.9;
+}
+.about-images i {
+    font-size: 14px;
+    color: #606060;
+    font-weight: 500;
+    line-height: 1.9;
+}
+.about-images a {
+    color: #b55f3b;
+}
+.about-images a:hover {
+    color: #b55f3b;
+    text-decoration: none;
+}
+.about-img {
+    width: 100%;
+    margin-bottom: 30px;
+}
+/*   about page css ends   */
+
+
+/*   contact page css starts   */
+.contact-images-box h2 {
+    font-size: 2rem;
+    color: #606060;
+    margin-bottom: 30px;
+    margin-top: 14%;
+    text-align: center;
+}
+.contact-section {
+    text-align: center;
+}
+.contact-images-box p {
+    color: #606060;
+    font-weight: 500;
+    font-size: 13px;
+    margin-top: 10px;
+}
+.contact-map {
+    margin-bottom: 30px;
+}
+.contact-images-box a {
+    color: #b55f3b;
+}
+.contact-images-box a:hover {
+    color: #b55f3b;
+}
+
+/*   contact page css ends   */
+
+@media only screen and (min-width: 300px) and (max-width: 767px){
+.featured-product-box {
+    margin-bottom: 20px;
+} 
+.site-header__logo {
+    padding-left: 22px;
+    text-align: center !important;
+    margin-top: 21px !important;
+} 
+.sidenav{
+   z-index: 99999 !important;
+}
+.disktop-menu{
+	display: none;
+}	
+.mobile-menu{
+	display: block;
+}
+.main-sidebar{
+   position: initial;
+}
+.cart-img {
+    width: 35%;
+    margin-left: 28px;
+    margin-top: 15px;
+}
+.mobile-logo {
+    margin-top: 14px;
+}
+.banner-text {
+    padding-bottom: 40px !important;
+}
+.banner-text h1 {
+    margin-top: -20px;
+    font-size: 29px;
+}
+.right-side-sider {
+    margin-bottom: 12px;margin-right: -23px;
+}
+.lookbook-images {
+    margin-top: 4%;
+}
+.lookbook-images-1 {
+    margin-top: 4%;
+}
+.lookbook-images-3 {
+    margin-top: 4%;
+}
+.lookbook-images-2 {
+    margin-top: 4%;
+}
+.lookbook-text {
+    margin-top: 4%;
+}
+.lookbook-images-section-2 {
+    margin-top: 0%;
+}
+.lookbook-images-section-1 {
+    margin-top: 4%;
+}
+.journal-gallery {
+    margin-top: 0;
+}
+ .dropbtn{
+   margin-left: 0px ;
+ }
+  .mobile-link a {
+    margin-left: 43px;
+    margin-top: -28px;
+    font-size: 13px;
+}
+  .mobile-link {
+    margin-bottom: 0px;
+}
+}
+@media only screen and (min-width: 768px) and (max-width: 991px){
+.main-sidebar{
+	width: 200px;
+}
+.collection-heading h2 {
+    font-size: 24px;
+    color: #606060;
+}
+.collection-heading {
+    text-align: center;
+    padding-top: 23%;
+    padding-bottom: 20%;
+}
+.lookbook-sevtion h2 {
+    font-size: 31px;
+}
+}
+@media only screen and (min-width: 992px) and (max-width: 1024px){
+  .navigation-menu-2 li a {
+    color: #606060;
+    font-size: 10px;
+}
+.main-sidebar{
+	width: 235px;
+}
+.collection-heading {
+    text-align: center;
+    padding-top: 30%;
+    padding-bottom: 20%;
+}
+.collection-heading h2 {
+    font-size: 26px;
+}
+
+}
